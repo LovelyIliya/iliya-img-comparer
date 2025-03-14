@@ -8,6 +8,7 @@
 左右下角可配置文字，且指引线距离文字过近时文字会变透明
 
 ## 使用示例
+
 ```
 <template>
 	<view class="content">
@@ -49,15 +50,15 @@
 ## Props
 
 
-| 参数名 | 类型              | 说明     | 默认值    | 可选值  |
-| ------ |-----------------|--------|--------|------|
-|leftImg| string          | 左图     | /      | 图片地址 |
-| rightImg | string          | 右图     | /      |    图片地址  |
-| width | string          | 组件宽度   | 730rpx |          |
-|height| string          | 组件高度   | 400rpx |          |
-| leftText| string          | 左侧文本   |        |          |
-|rightText| string          | 右侧文本   |        |          |
-|leftColor | string          | 左侧文本颜色 | #fff   |          |
-|rightColor | string          | 右侧文本颜色 | #fff   |          |
-|animeStartLeft | string / number |指引线动画初次移动距离| 80%    |          |
-|animeEndLeft |  string / number | 指引线动画结束移动距离 | 40%    |          |
+| 参数名         | 类型            | 说明                   | 默认值 | 可选值                        |
+| -------------- | --------------- | ---------------------- | ------ | ----------------------------- |
+| leftImg        | string          | 左图                   | /      | 图片地址                      |
+| rightImg       | string          | 右图                   | /      | 图片地址                      |
+| width          | string          | 组件宽度               | 730rpx |                               |
+| height         | string          | 组件高度               | 400rpx |                               |
+| leftText       | string/slot     | 左侧文本               |        | 使用插槽left-text或传递props  |
+| rightText      | string/slot     | 右侧文本               |        | 使用插槽right-text或传递props |
+| leftColor      | string          | 左侧文本颜色           | #fff   |                               |
+| rightColor     | string          | 右侧文本颜色           | #fff   |                               |
+| animeStartLeft | string / number | 指引线动画初次移动距离 | 80%    |                               |
+| animeEndLeft   | string / number | 指引线动画结束移动距离 | 40%    |                               |
